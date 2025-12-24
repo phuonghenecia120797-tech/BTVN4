@@ -5,10 +5,8 @@ describe('Get Answer number - stable solution', () => {
     cy.get('#canvas')
       .invoke('text')
       .then((text) => {
-        // Debug (rất nên giữ khi học)
         cy.log(`TEXT = [${text}]`)
 
-        // Xử lý an toàn
         const parts = text.split(':')
 
         expect(parts.length).to.be.greaterThan(1)
