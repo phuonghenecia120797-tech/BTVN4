@@ -1,0 +1,24 @@
+[
+  {
+    "testcase": "TC1",
+    "username": "practice",
+    "password": "SuperSecretPassword!",
+    "type": "success",
+    "expectedUrl": "/secure",
+    "message": "You logged into a secure area!"
+  },
+  {
+    "testcase": "TC2",
+    "username": "wrongUser",
+    "password": "SuperSecretPassword!",
+    "type": "error",
+    "message": "invalid"
+  },
+  {
+    "testcase": "TC3",
+    "username": "practice",
+    "password": "WrongPassword",
+    "type": "error",
+    "message": "invalid"
+  }
+]
